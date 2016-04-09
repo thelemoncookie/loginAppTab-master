@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1UR-bQ-ERb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dar's Week 1 Project-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="woR-8C-xYD">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wXc-9g-WCa">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjf-K5-uLV">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="buttonLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKY-fq-JTO"/>
+                                    <segue destination="MqU-bk-6cW" kind="show" id="33v-hv-GQM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wXc-9g-WCa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="GHF-5i-zZU"/>
+                            <constraint firstItem="woR-8C-xYD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="HcF-n3-Pcu"/>
+                            <constraint firstItem="wXc-9g-WCa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="110" id="Hr0-Ho-Aou"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zjf-K5-uLV" secondAttribute="trailing" constant="148" id="IFD-0n-S0B"/>
+                            <constraint firstItem="Zjf-K5-uLV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="148" id="Tx2-bQ-FgT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="woR-8C-xYD" secondAttribute="trailing" constant="16" id="V2u-FY-9CN"/>
+                            <constraint firstItem="woR-8C-xYD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="V3p-b3-7uj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wXc-9g-WCa" secondAttribute="trailing" constant="16" id="ZJQ-SV-tAT"/>
+                            <constraint firstItem="Zjf-K5-uLV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="171" id="l0d-Yt-Z6G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="woR-8C-xYD" secondAttribute="trailing" constant="16" id="qwp-Rj-KE6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="woR-8C-xYD"/>
+                                <exclude reference="wXc-9g-WCa"/>
+                                <exclude reference="Zjf-K5-uLV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="GHF-5i-zZU"/>
+                                <exclude reference="Hr0-Ho-Aou"/>
+                                <exclude reference="ZJQ-SV-tAT"/>
+                                <exclude reference="HcF-n3-Pcu"/>
+                                <exclude reference="V2u-FY-9CN"/>
+                                <exclude reference="V3p-b3-7uj"/>
+                                <exclude reference="qwp-Rj-KE6"/>
+                                <exclude reference="IFD-0n-S0B"/>
+                                <exclude reference="Tx2-bQ-FgT"/>
+                                <exclude reference="l0d-Yt-Z6G"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="woR-8C-xYD"/>
+                                <include reference="wXc-9g-WCa"/>
+                                <include reference="Zjf-K5-uLV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="GHF-5i-zZU"/>
+                                <include reference="Hr0-Ho-Aou"/>
+                                <include reference="ZJQ-SV-tAT"/>
+                                <include reference="HcF-n3-Pcu"/>
+                                <include reference="V2u-FY-9CN"/>
+                                <include reference="V3p-b3-7uj"/>
+                                <include reference="qwp-Rj-KE6"/>
+                                <include reference="IFD-0n-S0B"/>
+                                <include reference="Tx2-bQ-FgT"/>
+                                <include reference="l0d-Yt-Z6G"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dar's Week 1 Project" id="vsG-5V-LMF">
+                        <barButtonItem key="backBarButtonItem" title="back" id="cGZ-O2-QkF"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textFieldPassword" destination="wXc-9g-WCa" id="Arl-dE-Ywn"/>
+                        <outlet property="textFieldUsername" destination="woR-8C-xYD" id="HRp-lJ-BGt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981" y="322"/>
+        </scene>
+        <!--Bio-->
+        <scene sceneID="epQ-g4-ojU">
+            <objects>
+                <viewController id="efG-qC-dI1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o2A-3L-TCA"/>
+                        <viewControllerLayoutGuide type="bottom" id="lT1-xc-ICR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p8e-ST-Qow">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMT-zh-UMx">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">TLDR;
+Photographer, food stylist, chef and assassin.
+
+Current Location: Melbourne, Australia 
+
+Comic Enthusiast. Avid Lifter, coffee consumer, sci-fi junkie, terrible dancer and Snapchat artist.
+
+Professional vagabond. Previous known whereabouts: NYC, Chicago, Portland and The San Francisco Bay Area. 
+
+Obsessions: Excel spreadsheets and comics. 
+
+Athletic Background: Figure skater, swimmer, acrobatic, archer, ballet dancer, Capoeira and weight lifting. 
+
+Contact: darlenephan@gmail.com
+
+Darlene is a photographer, chef, and soon to be iOS developer based in Melbourne, Australia. Darlene was born and raised in San Jose, California; the heart of the Silicon Valley. She started her first career as a chef by interning at restaurants while in high school at age 17. With the desire and uncontrollable urge to learn, she began to pick up hobbies and new crafts like wildfire. Basic programming in high school, photography came next, and it didn’t stop at comics, coffee, cars, sewing, archery, or weight lifting. She lives her life on the internet and consumes an abundance of media on a plethora of platforms. 
+
+In 2013 Darlene reassessed her skills and became a full time freelance photographer. Though her love for food will never dissipate, she was able to incorporate her previous knowledge as a chef by photographing food. She’s worked with Top Chef competitors/finalists, James Beard Award nominees, and Michelin star holders throughout the United States. Worked with brands such as Amazon and Wikia and have been published in The Huffington Post, Chicago Magazine, Wikipedia and The Weekend Edition. 
+
+Darlene has relocated to Melbourne, Australia as of early 2016. She is currently working on projects that she’s passionate about while putting herself through school studying iOS development. Currently her life revolves around working, studying, eating, weight lifting and the occasional cup of coffee. 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" address="YES" calendarEvent="YES"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                    <rect key="frame" x="13" y="337" width="360" height="229"/>
+                                </variation>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tumblr_mvpzgaodDF1rtynoyo4_1280" translatesAutoresizingMaskIntoConstraints="NO" id="vRb-0y-FkA">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="73" y="-74" width="240" height="560"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="VMT-zh-UMx"/>
+                                <exclude reference="vRb-0y-FkA"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="VMT-zh-UMx"/>
+                                <include reference="vRb-0y-FkA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bio" image="chef" id="mon-au-3JA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jJf-he-lxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972.5" y="1173"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qhj-P5-SDM">
+            <objects>
+                <viewController id="HGK-hT-ZbD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zff-2F-PYD"/>
+                        <viewControllerLayoutGuide type="bottom" id="2dR-97-ebV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jnZ-3Y-6ys">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybs-CL-aiu">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="172" y="107" width="96" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.67964974879999995" green="1" blue="0.74154669299999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ybs-CL-aiu"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ybs-CL-aiu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="BLy-vK-anJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JqY-cn-Q9O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2853" y="1046"/>
+        </scene>
+        <!--Goals-->
+        <scene sceneID="7dT-de-Htd">
+            <objects>
+                <viewController id="LY8-Yk-ctF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VvN-27-f87"/>
+                        <viewControllerLayoutGuide type="bottom" id="XXd-Cn-Ye6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" id="yGg-Fd-TVt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMK-ig-ksW">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="225" y="453" width="71" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.89709497270000005" blue="0.58769920809999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="dMK-ig-ksW"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="dMK-ig-ksW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Goals" image="briefcase" id="qQA-YT-CrZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JFG-Rd-fZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="311"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aXN-Hd-KaG">
+            <objects>
+                <tabBarController id="MqU-bk-6cW" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Ugb-iP-csf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="efG-qC-dI1" kind="relationship" relationship="viewControllers" id="Xal-lX-5jz"/>
+                        <segue destination="HGK-hT-ZbD" kind="relationship" relationship="viewControllers" id="2Xe-dF-ty9"/>
+                        <segue destination="LY8-Yk-ctF" kind="relationship" relationship="viewControllers" id="YTl-op-p2B"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tdq-ah-HFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="311"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="t2I-Vi-UKU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1UR-bQ-ERb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="R0r-Nn-pai">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="X6x-eJ-cwS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3N-3t-gPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="briefcase" width="25" height="25"/>
+        <image name="chef" width="25" height="25"/>
+        <image name="tumblr_mvpzgaodDF1rtynoyo4_1280" width="560" height="560"/>
+    </resources>
+</document>
